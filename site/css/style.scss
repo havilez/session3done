@@ -76,6 +76,7 @@ body {
 
 	}
 
+	// hide search bar in mobile view
 	@media screen and (max-width: $break-two) {
 		.searchbar {
 				display: none;
@@ -105,13 +106,12 @@ body {
 			padding: 0 $padding;
 		}
 
+		// move pirate portfolio image to left in mobile view
 		@media screen and (max-width: $break-two) {
 			.portfolio-image {
 				float:left;
 			}
-//			.sidebar_header {
-//					float: right;
-//				}
+
 
 		}
 
@@ -125,9 +125,13 @@ body {
 .social {
 	width: 120px;
 	margin: 0 auto;
-	
+
+	// move social medai links to left in mobie view
 	@media screen and (max-width: $break-two) {
 		float: left;
+		left: 20px;
+
+
 	}
 
 	a {
@@ -187,6 +191,8 @@ body {
 		padding: $padding*2 $padding*3;
 	}
 
+
+
 	h3 {
 		text-transform: uppercase;
 		font-size: 120%;
@@ -245,6 +251,13 @@ body {
 				background-position: -32px 0px;
 			}
 		}
+
+		// in mobile view display menu vertically
+		@media screen and (max-width: $break-two) {
+			display: inline;
+
+			float: left;
+		}
 	}
 }
 
@@ -259,8 +272,8 @@ ul {
 
 	@media screen and (min-width: $break-three) {
 		margin: 0 0 0 $margin*2.5;
-	//	display: block;
-		display: inline;
+	display: block;
+
 		width: auto;
 	}
 
