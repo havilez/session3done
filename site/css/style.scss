@@ -59,13 +59,27 @@ body {
 	width: 100%;
 	height: 100%;
 	padding-bottom:14%;
-	
+
+// searchbar
+.searchbar {
+		text-align: center;
+	}
 
 	@media screen and (min-width: $break-three) {
 		float: left;
 		width: 20%;
-		background: url(../images/hero.png) bottom center no-repeat;
+		background: url(../images/hero.png) bottom center no-repeat; // in mobile  view do not display pirate icon
 	background-size: 80%;
+
+
+
+
+	}
+
+	@media screen and (max-width: $break-two) {
+		.searchbar {
+				display: none;
+			}
 
 	}
 
@@ -91,6 +105,16 @@ body {
 			padding: 0 $padding;
 		}
 
+		@media screen and (max-width: $break-two) {
+			.portfolio-image {
+				float:left;
+			}
+//			.sidebar_header {
+//					float: right;
+//				}
+
+		}
+
 	}
 
 }
@@ -101,6 +125,10 @@ body {
 .social {
 	width: 120px;
 	margin: 0 auto;
+	
+	@media screen and (max-width: $break-two) {
+		float: left;
+	}
 
 	a {
 		float: left;
@@ -150,10 +178,7 @@ body {
 
 	}
 }
-// searchbar
-.searchbar {
-	text-align: center;
-}
+
 // left side menus
 .menus {
 	text-align: center;
@@ -234,7 +259,8 @@ ul {
 
 	@media screen and (min-width: $break-three) {
 		margin: 0 0 0 $margin*2.5;
-		display: block;
+	//	display: block;
+		display: inline;
 		width: auto;
 	}
 
